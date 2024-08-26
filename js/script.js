@@ -3,10 +3,11 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
   import { getAuth,signInWithEmailAndPassword,onAuthStateChanged, signOut  } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
   import { getDatabase,set,ref,get,remove,update } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
+  let date = new Date()
+let yearChanger = document.querySelector("#yearChanger")
+yearChanger.innerText = `${date.getFullYear()}/${date.getMonth()}/${date.getDate()}`
+
   const firebaseConfig = {
    apiKey: "AIzaSyBZFj3Pp5CytUVyfm10kcG6FaCmZkGV3YM",
    authDomain: "blog-website-db584.firebaseapp.com",
